@@ -26,8 +26,8 @@ export default function NoteCreate(props) {
     }
     return (
         <div className="note">
-            <input onChange={titleHandler} type="text" value={title}></input>
-            <input onChange={contentHandler} type="text" value={content}></input>
+            <input onChange={titleHandler} type="text" value={title} placeholder="Note Title"></input>
+            <input onChange={contentHandler} type="text" value={content} placeholder="Note Content"></input>
             <button onClick={clickHandler}>Add</button>
         </div>
     );
